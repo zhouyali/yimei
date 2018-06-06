@@ -1,0 +1,185 @@
+body,
+div,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dt,
+dd,
+ol,
+form,
+input,
+textarea,
+th,
+td,
+select {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  -o-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -webkit-tap-highlight-color: transparent;
+  font-weight:normal;
+}
+i {
+ font-style: normal; 
+}
+.blur-toggle{
+    filter:blur(0px);
+    transition:1s;
+}
+fieldset {
+  border: none;
+  padding:0;
+  margin:0;
+}
+ input:-webkit-autofill,
+ textarea:-webkit-autofill,
+ select:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 1000px white inset;
+ }
+*:focus { 
+  outline: none;
+  background-color: transparent;
+}
+a{ 
+  text-decoration:none; 
+  color:#333; 
+} 
+::selection { background:transparent; }
+::-moz-selection { background:transparent; }
+html {
+  width: 100%;
+  height: 100%;
+  // background: #f5f5f5;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+body {
+  font-family: arial, "Microsoft YaHei";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  width: 100%;
+  height: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  /*去除苹果手机input框会有输入灰色背景*/
+}
+
+input,
+textarea {
+  outline: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  /*去除苹果手机input默认样式*/
+  -webkit-tap-highlight-color: transparent;
+  /*去除苹果手机input框会有输入灰色背景*/
+  border: none;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #c6c8d6;
+  font-size: pxTorem(30);
+}
+
+
+
+.mask.active {
+  display: block;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: ".";
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+
+.fl {
+  float: left
+}
+
+.fr {
+  float: right
+}
+
+.tl {
+  text-align: left;
+}
+
+.tc {
+  text-align: center
+}
+
+.tr {
+  text-align: right;
+}
+
+img {
+  border: 0
+}
+.container {
+  height:100%;
+  min-height:100%;
+  background:rgba(246,246,245,1);
+  overflow:hidden;
+  overflow-y:scroll;
+  width:100%;
+}
+.toast-div{
+    position:fixed;
+    z-index:10000;
+    top:45%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:rgba(0,0,0,.6);
+    color:#FFF;
+    border-radius:px2rem(16px);
+    padding:px2rem(36px) px2rem(48px);
+    font-size:px2rem(32px);
+    line-height:px2rem(44px);
+    text-align:center;
+    max-width:px2rem(600px);
+    min-width:px2rem(100px);
+}
+.toast-enter-active,.toast-leave-active {transition: all .2s}
+.toast-enter, .toast-leave-active {opacity: 0;transform:translate(-50%,-30%);}
+.toast-icon-ok{
+    display:block;
+    height:px2rem(94px);
+    margin:0 auto px2rem(16px);
+}
+.toast-icon-error{
+    vertical-align: sub;
+    height:px2rem(44px);
+    margin-right: px2rem(10px);
+}
+
